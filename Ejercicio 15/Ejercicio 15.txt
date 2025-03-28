@@ -1,0 +1,44 @@
+#include <iostream>
+
+int main() 
+{
+int a,suma=0,contador=0;
+ struct Infraccion{
+   int tipo,valor=0,i;
+   char gravedad,motivo;
+ };
+ struct Infraccion infracciones[5];
+ for(a=0;a<5;a++)
+ {
+    struct Infraccion x;
+    printf("ingrese el tipo:");
+    scanf("%d", &x.tipo);
+    printf("ingrese el valor:");
+    scanf("%d", &x.valor);
+    printf("ingrese el gravedad:");
+    getchar();
+    scanf("%c", &x.gravedad);
+    infracciones[a]=x;
+    suma+=x.valor;
+
+    if ((x.tipo==3 or x.tipo==4) and x.gravedad=='G')
+    {
+        contador+=1;
+    }
+    if(contador>3)
+    {
+        printf("Se debera Clausurar Fabrica\n");
+    }
+        
+    
+    
+    
+ }
+ if(contador<3)
+{
+    printf("El monto total de multas a pagar es: %d", suma);
+}
+
+
+    return 0;
+}
