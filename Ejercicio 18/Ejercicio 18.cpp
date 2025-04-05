@@ -1,0 +1,16 @@
+#include <iostream>
+int main() 
+{
+int a,valor=0;
+printf("Ingrese un valor:");
+scanf("%d",&valor);
+
+for(a=0;a<valor;a++)
+{
+    if(a%3==0&a%5!=0)
+    {
+        printf("%d\n",a);
+    }
+}
+    return 0;
+}
