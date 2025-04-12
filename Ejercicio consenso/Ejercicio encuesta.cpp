@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include<string>
-#define SENSOR_SIZE 5
 int num=0,cont=0;
 using namespace std;
 struct Persona{
